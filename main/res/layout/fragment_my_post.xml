@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/post_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="Post Image"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Caption -->
+    <TextView
+        android:id="@+id/post_caption_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caption"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/post_price_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Category -->
+    <TextView
+        android:id="@+id/post_category_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Item Age -->
+    <TextView
+        android:id="@+id/post_item_age_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Age"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Condition -->
+    <TextView
+        android:id="@+id/post_condition_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Condition"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

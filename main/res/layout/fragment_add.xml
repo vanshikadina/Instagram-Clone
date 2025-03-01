@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- LinearLayout for the two images side by side -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+    <!-- Image Selection -->
+
+
+        <ImageView
+            android:id="@+id/selectImage"
+            android:layout_width="169dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:contentDescription="Selected Image"
+            android:src="@drawable/post" />
+
+        <ImageView
+            android:id="@+id/captureImage"
+            android:layout_width="161dp"
+            android:layout_height="191dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Capture Image or Video"
+            android:focusable="true"
+            android:src="@drawable/camera" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/caption_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter caption" />
+
+    <!-- Price -->
+    <EditText
+        android:id="@+id/price_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Price (CAD)"
+        android:inputType="numberDecimal" />
+
+    <!-- Category Label -->
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Category (Spinner) -->
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Item Age -->
+    <EditText
+        android:id="@+id/item_age_edit_text"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_height="48dp"
+        android:hint="Age of Item (in years)"
+        android:inputType="number" />
+
+    <!-- Condition (ScrollView + RadioGroup) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:fillViewport="true"
+        android:layout_marginBottom="8dp">
+
+        <RadioGroup
+            android:id="@+id/condition_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used-good"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/usedNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used-like new"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/usedFair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used-fair"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+    </ScrollView>
+
+    <!-- Create Post Button -->
+    <Button
+        android:id="@+id/create_post_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Post" />
+
+</LinearLayout>
+
